@@ -1,5 +1,6 @@
 import 'package:ios_clock_app/core/imports/imports.dart';
 import 'package:ios_clock_app/core/widgets/edit_and_add_bar.dart';
+import 'package:ios_clock_app/features/world_clock/presentation/widgets/add_world_clock_bottom_sheet.dart';
 import 'package:ios_clock_app/features/world_clock/presentation/widgets/world_clock_list_view.dart';
 
 class WorldClockView extends StatelessWidget {
@@ -14,7 +15,11 @@ class WorldClockView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //! Edit & Add Bar
-            const EditAndAddBar(),
+            EditAndAddBar(
+              addOnTap: () {
+                addWorldClocksBottomSheet(context);
+              },
+            ),
             SizedBox(height: 15.responsiveHeight(context)),
             //! Title
             Text(

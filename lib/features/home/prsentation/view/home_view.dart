@@ -12,7 +12,10 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   int selectedIndex = 0;
   List<Widget> screens = [
-    const WorldClockView(),
+    BlocProvider(
+      create: (context) => WorldClocksCubit(),
+      child: const WorldClockView(),
+    ),
     const Placeholder(),
     const Placeholder(),
     const Placeholder(),
