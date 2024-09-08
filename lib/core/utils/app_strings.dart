@@ -1,7 +1,12 @@
 abstract class AppStrings {
-  //! Navigation Bar
+  //! Home
   static const String worldClock = "World Clock";
   static const String alarm = "Alarm";
   static const String stopwatch = "Stopwatch";
   static const String timer = "Timer";
+  static const String done = "Done";
+  static const String edit = "Edit";
+
+  //! World Clock
+  static const String noWorldClocks = "No World Clocks";
 }
