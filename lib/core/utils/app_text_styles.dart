@@ -234,4 +234,12 @@ abstract class Styles {
       fontWeight: FontWeight.w600,
     );
   }
+  static TextStyle style10(context) {
+    return TextStyle(
+      overflow: TextOverflow.ellipsis,
+      fontSize: 11.responsiveText(context),
+      color: AppColors.white,
+      fontWeight: FontWeight.w500,
+    );
+  }
 }

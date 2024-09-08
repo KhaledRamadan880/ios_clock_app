@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:ios_clock_app/core/imports/imports.dart';
 
 ThemeData theme() {
   return ThemeData(
-    scaffoldBackgroundColor: const Color(0xff000000),
+    scaffoldBackgroundColor: AppColors.black,
     primaryColor: const Color(0xffFF9500),
   );
 }
