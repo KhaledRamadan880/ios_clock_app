@@ -19,14 +19,16 @@ class _HomeViewState extends State<HomeView> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: screens[selectedIndex],
-      bottomNavigationBar: CustomBottomNavBar(
-        selectedIndex: selectedIndex,
-        onTap: (index) {
-          selectedIndex = index;
-          setState(() {});
-        },
+    return SafeArea(
+      child: Scaffold(
+        body: screens[selectedIndex],
+        bottomNavigationBar: CustomBottomNavBar(
+          selectedIndex: selectedIndex,
+          onTap: (index) {
+            selectedIndex = index;
+            setState(() {});
+          },
+        ),
       ),
     );
   }
